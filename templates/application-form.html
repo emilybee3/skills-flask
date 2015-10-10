@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <title> A Job Application for the Triumphant Masses!</title>
+    </head>
+    <body>
+        <h1> A Job Application for the Masses </h1>
+        <section class="main-text">
+            <p> With this web based job application the workers of the world can apply for jobs safely free from employer bias. The revolution lives! </p>
+        </section>
+
+        <form action="/application" method="GET">
+            <!--text submit section of form -->
+            <div class="textbox">
+                <label id="firstname">First Name: <input type="text" name="firstname"></label>
+                <label id="lastname">Last Name: <input type="text" name="lastname"></label>
+                <label id="salary">Salary Requirement: <input type="text" name="salary"></label>
+            </div>
+            <!-- dropdown menu section of form -->
+            <div>
+                <label>Select Position:
+                <select name="position"><label>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+            </div>
+            <!-- Submit button -->
+            <div>
+                <input type="submit" class="submit">
+            </div>
+        </form>
+    </body>
+</html>
